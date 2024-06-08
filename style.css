@@ -27,6 +27,7 @@ header {
     margin-right: 20px;
     text-align: center;
     margin-left: 20%; /* 위치를 중앙으로 이동 */
+    cursor: pointer; /* 클릭할 수 있게 커서 변경 */
 }
 
 .subtitle {
@@ -40,6 +41,22 @@ header {
     width: 300px;
     font-size: 16px;
     margin-right: 20%; /* 위치를 오른쪽으로 이동 */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
 }
 
 nav {

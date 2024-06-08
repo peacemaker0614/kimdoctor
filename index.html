@@ -9,21 +9,24 @@
 <body>
     <header>
         <div class="logo-search">
-            <div class="logo">
+            <div class="logo" onclick="window.location.href='index.html'">
                 김닥터넷
                 <span class="subtitle">-슬기로운 수련을 위해-</span>
             </div>
-            <input type="text" class="search-bar" placeholder="검색">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="검색">
+                <button class="search-button"><img src="image.png" alt="검색"></button>
+            </div>
         </div>
     </header>
     <nav>
         <ul class="board-list">
-            <li><a href="#" class="red">수련병원/과 정보</a></li>
-            <li><a href="#">전체 게시판</a></li>
-            <li><a href="#">베스트 게시판</a></li>
-            <li><a href="#">자유 게시판</a></li>
-            <li><a href="#">사랑방</a></li>
-            <li><a href="#">결혼, 육아</a></li>
+            <li><a href="board1.html" class="red">수련병원/과 정보</a></li>
+            <li><a href="board2.html">전체 게시판</a></li>
+            <li><a href="board3.html">베스트 게시판</a></li>
+            <li><a href="board4.html">자유 게시판</a></li>
+            <li><a href="board5.html">사랑방</a></li>
+            <li><a href="board6.html">결혼, 육아</a></li>
         </ul>
     </nav>
     <main>
@@ -33,8 +36,8 @@
                 <input type="text" placeholder="아이디">
                 <input type="password" placeholder="비밀번호">
                 <button>로그인</button>
-                <a href="#">회원가입</a>
-                <a href="#">비밀번호 변경</a>
+                <a href="signup.html">회원가입</a>
+                <a href="password.html">비밀번호 변경</a>
             </div>
         </aside>
         <section class="main-content">
