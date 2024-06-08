@@ -27,8 +27,7 @@ header {
     font-weight: bold;
     margin-right: 20px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
     cursor: pointer;
 }
 
@@ -40,11 +39,9 @@ header {
 
 .search-bar {
     padding: 10px;
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 20%;
 }
 
 .search-container {
@@ -75,19 +72,16 @@ nav {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .board-list li a {
     text-decoration: none;
     color: black;
-    padding: 10px 20px;
+    padding: 20px 40px;
     font-size: 20px;
     transition: color 0.3s ease, background-color 0.3s ease;
     border-radius: 5px;
     font-family: 'Arial', sans-serif;
-    display: block;
-    text-align: center;
 }
 
 .board-list li a:hover {
@@ -102,13 +96,12 @@ nav {
 
 main {
     display: flex;
-    flex-direction: column;
     padding: 20px;
 }
 
 aside {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 200px;
+    margin-right: 20px;
 }
 
 .login-box {
@@ -116,7 +109,9 @@ aside {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    position: static;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
 }
 
 .login-box h2 {
@@ -163,25 +158,29 @@ aside {
     border-radius: 10px;
     text-align: center;
     font-size: 16px;
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* 반응형 웹 디자인을 위한 미디어 쿼리 추가 */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo-search {
+        flex-direction: column;
+    }
+
     .logo {
         font-size: 24px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .search-bar {
-        width: 100%;
-        max-width: 200px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 200px;
+        margin-right: 10%;
     }
 
     .board-list {
@@ -195,15 +194,18 @@ aside {
     }
 
     main {
+        flex-direction: column;
         padding: 10px;
     }
 
     .login-box {
+        position: static;
         margin-bottom: 20px;
     }
 
     .board {
-        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         font-size: 14px;
     }
 }
