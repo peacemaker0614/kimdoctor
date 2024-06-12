@@ -7,14 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 생략된 기존 코드 -->
+    <header>
+        <div class="logo-search">
+            <div class="logo" onclick="window.location.href='index.html'">
+                김닥터넷
+                <span class="subtitle">-슬기로운 수련을 위해-</span>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="검색">
+                <button class="search-button"><img src="image.png" alt="검색"></button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="board-list">
+            <li><a href="suryeon_info.html">수련병원/과 정보</a></li>
+            <li><a href="all_board.html">전체 게시판</a></li>
+            <li><a href="best_board.html">베스트 게시판</a></li>
+            <li><a href="free_board.html">자유 게시판</a></li>
+            <li><a href="sarangbang.html">사랑방</a></li>
+            <li><a href="career.html">진로</a></li>
+            <li><a href="anonymous_board.html">익명 게시판</a></li>
+            <li><a href="politics_society_board.html">정치/사회</a></li>
+            <li><a href="finance_board.html">재테크</a></li>
+            <li><a href="hobby_board.html">취미</a></li>
+            <li><a href="overseas_usmle_board.html">해외/USMLE</a></li>
+            <li><a href="market_board.html">장터</a></li>
+            <li><a href="notice_board.html">공지사항</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="main-content">
             <div class="form-container">
                 <h2>회원가입</h2>
-                <input type="text" id="username" placeholder="아이디">
-                <input type="password" id="password" placeholder="비밀번호">
-                <button onclick="register()">가입하기</button>
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="비밀번호">
+                <input type="password" placeholder="비밀번호 확인">
+                <button>가입하기</button>
             </div>
         </section>
     </main>
