@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <title>게시판 글 작성</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
             </div>
             <div class="search-container">
                 <input type="text" class="search-bar" placeholder="검색">
-                <button class="search-button"><img src="image.png" alt="검색"></button>
+                <button class="search-button"><img src="images/search-icon.png" alt="검색 아이콘"></button>
             </div>
         </div>
     </header>
@@ -39,11 +39,12 @@
     <main>
         <section class="main-content">
             <div class="form-container">
-                <h2>회원가입</h2>
-                <input type="text" placeholder="아이디">
-                <input type="password" placeholder="비밀번호">
-                <input type="password" placeholder="비밀번호 확인">
-                <button>가입하기</button>
+                <h2>글 작성</h2>
+                <form action="submit_post.html" method="post">
+                    <input type="text" name="title" placeholder="제목" required>
+                    <textarea name="content" placeholder="내용" rows="10" required></textarea>
+                    <button type="submit">작성하기</button>
+                </form>
             </div>
         </section>
     </main>

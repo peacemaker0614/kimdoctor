@@ -50,20 +50,20 @@ header {
 }
 
 .search-button {
-    background: none;
+    background: url('images/search-icon.png') no-repeat center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
     border: none;
     cursor: pointer;
-}
-
-.search-button img {
-    width: 20px;
-    height: 20px;
+    padding: 0;
 }
 
 nav {
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
 }
 
 .board-list {
@@ -71,17 +71,23 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.board-list li {
+    flex: 1 0 auto;
 }
 
 .board-list li a {
     text-decoration: none;
     color: black;
-    padding: 20px 40px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     transition: color 0.3s ease, background-color 0.3s ease;
     border-radius: 5px;
-    font-family: 'Arial', sans-serif;
+    display: block;
+    text-align: center;
 }
 
 .board-list li a:hover {
