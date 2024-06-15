@@ -228,13 +228,21 @@ aside {
     }
 
     .board-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* 게시판 목록을 세로로 정렬 */
+        max-height: 300px; /* 최대 높이 설정 */
+        overflow-y: auto; /* 세로 스크롤 가능하게 설정 */
+    }
+
+    .board-list li {
+        flex: none; /* flex-grow, flex-shrink 값을 none으로 설정 */
+        margin-bottom: 10px; /* 각 게시판 간격 설정 */
     }
 
     .board-list li a {
         padding: 10px 20px;
         font-size: 16px;
+        display: block;
+        text-align: left;
     }
 
     main {
